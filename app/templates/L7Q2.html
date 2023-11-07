@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-assets>
+<img id="SkyTexture" src="daytime.jpg">
+</a-assets>
+<a-sky src="#SkyTexture"></a-sky>
+<a-box position="0 4 -10" color="red" height="1" width="1" depth="1">
+    <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-box>
+<a-cylinder position="2 4 -10" color="yellow" radius="0.5" height="2">
+    <a-animation attribute="rotation" to="0 0 360" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-cylinder>
+<a-cylinder position="0 1 -10" color="orange" radius="0.5" height="1.7">
+    <a-animation attribute="rotation" to="0 0 360" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-cylinder>
+<a-box position="2 1 -10" color="purple" height="1" width="1" depth="1">
+    <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-box>
+<a-cylinder position="-18 4 2" color="green" radius="0.5" height="1.7">
+    <a-animation attribute="rotation" to="360 0 0" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-cylinder>
+</a-scene>
+
+
+</body>
+</html>
